@@ -1,4 +1,4 @@
-token = "MTA5Mzk5ODM5MTU3NjUwMjM5Mg.G8VBoD.gSB0vXO7OXWaYI3O7NQyOl--wuNp0V7Cu7CKTY"
+token = ""
 import discord
 from discord.ext import commands
 from discord import app_commands, ui 
