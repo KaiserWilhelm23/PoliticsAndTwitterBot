@@ -74,8 +74,19 @@ Welcome to the Politics & Twitter bot
 async def helpp(ctx):
     await ctx.send(help)
 
+@bot.command()
+async def update_app(ctx):
+    update()
+    await ctx.send("Politics & Twitter is updated!!!!")
 
+def update():
+    import requests
 
+    url = 'https://raw.githubusercontent.com/blaze005/PoliticsAndTwitterBot/main/main.py'
+    r = requests.get(url, allow_redirects=True)
+   
+
+    open('main.py', 'wb').write(r.content)
 
 
 
