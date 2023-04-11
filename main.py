@@ -78,6 +78,7 @@ async def helpp(ctx):
 async def update_app(ctx):
     update()
     await ctx.send("Politics & Twitter is updated!!!!")
+    print(" [WARNING] Updated code and ready to redeploy")
 
 def update():
     import requests
