@@ -91,4 +91,17 @@ def update():
 
 
 
+
+@bot.command()
+async def false_info(ctx, *,tweet_data = None):
+    if tweet_data == None:
+        await ctx.send("No tweet: /tweet [text]") 
+    else:
+        await ctx.message.delete()
+        print(f"Admin: {ctx.author.display_name} Stated, {tweet_data}")
+        embed = discord.Embed(title="False Info", description=tweet_data, color=discord.Color.blue())
+        
+        msg = await ctx.send(embed=embed)
+
+
 bot.run(token)
